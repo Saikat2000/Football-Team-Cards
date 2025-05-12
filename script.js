@@ -18,154 +18,154 @@ const myFavoriteFootballTeam = {
     {
       name: "Sergio Almirón",
       position: "forward",
-      number: 1,
+      Jersey_Number: 1,
       isCaptain: false,
       nickname: null,
     },
     {
       name: "Sergio Batista",
       position: "midfielder",
-      number: 2,
+      Jersey_Number: 2,
       isCaptain: false,
       nickname: null,
     },
     {
       name: "Ricardo Bochini",
       position: "midfielder",
-      number: 3,
+      Jersey_Number: 3,
       isCaptain: false,
       nickname: "El Bocha",
     },
     {
       name: "Claudio Borghi",
       position: "midfielder",
-      number: 4,
+      Jersey_Number: 4,
       isCaptain: false,
       nickname: "Bichi",
     },
     {
       name: "José Luis Brown",
       position: "defender",
-      number: 5,
+      Jersey_Number: 5,
       isCaptain: false,
       nickname: "Tata",
     },
     {
       name: "Daniel Passarella",
       position: "defender",
-      number: 6,
+      Jersey_Number: 6,
       isCaptain: false,
       nickname: "El Gran Capitán",
     },
     {
       name: "Jorge Burruchaga",
       position: "forward",
-      number: 7,
+      Jersey_Number: 7,
       isCaptain: false,
       nickname: "Burru",
     },
     {
       name: "Néstor Clausen",
       position: "defender",
-      number: 8,
+      Jersey_Number: 8,
       isCaptain: false,
       nickname: null,
     },
     {
       name: "José Luis Cuciuffo",
       position: "defender",
-      number: 9,
+      Jersey_Number: 9,
       isCaptain: false,
       nickname: "El Cuchu",
     },
     {
       name: "Diego Maradona",
       position: "midfielder",
-      number: 10,
+      Jersey_Number: 10,
       isCaptain: true,
       nickname: "El Pibe de Oro",
     },
     {
       name: "Jorge Valdano",
       position: "forward",
-      number: 11,
+      Jersey_Number: 11,
       isCaptain: false,
       nickname: "The Philosopher of Football",
     },
     {
       name: "Héctor Enrique",
       position: "midfielder",
-      number: 12,
+      Jersey_Number: 12,
       isCaptain: false,
       nickname: null,
     },
     {
       name: "Oscar Garré",
       position: "defender",
-      number: 13,
+      Jersey_Number: 13,
       isCaptain: false,
       nickname: null,
     },
     {
       name: "Ricardo Giusti",
       position: "midfielder",
-      number: 14,
+      Jersey_Number: 14,
       isCaptain: false,
       nickname: null,
     },
     {
       name: "Luis Islas",
       position: "goalkeeper",
-      number: 15,
+      Jersey_Number: 15,
       isCaptain: false,
       nickname: "El loco",
     },
     {
       name: "Julio Olarticoechea",
       position: "defender",
-      number: 16,
+      Jersey_Number: 16,
       isCaptain: false,
       nickname: null,
     },
     {
       name: "Pedro Pasculli",
       position: "forward",
-      number: 17,
+      Jersey_Number: 17,
       isCaptain: false,
       nickname: null,
     },
     {
       name: "Nery Pumpido",
       position: "goalkeeper",
-      number: 18,
+      Jersey_Number: 18,
       isCaptain: false,
       nickname: null,
     },
     {
       name: "Oscar Ruggeri",
       position: "defender",
-      number: 19,
+      Jersey_Number: 19,
       isCaptain: false,
       nickname: "El Cabezón",
     },
     {
       name: "Carlos Tapia",
       position: "midfielder",
-      number: 20,
+      Jersey_Number: 20,
       isCaptain: false,
       nickname: null,
     },
     {
       name: "Marcelo Trobbiani",
       position: "midfielder",
-      number: 21,
+      Jersey_Number: 21,
       isCaptain: false,
       nickname: "Calesita",
     },
     {
       name: "Héctor Zelada",
       position: "goalkeeper",
-      number: 22,
+      Jersey_Number: 22,
       isCaptain: false,
       nickname: null,
     },
@@ -184,12 +184,12 @@ headCoach.textContent = coachName;
 const setPlayerCards = (arr = players) => {
   playerCards.innerHTML += arr
     .map(
-      ({ name, position, number, isCaptain, nickname }) => {
+      ({ name, position, Jersey_Number, isCaptain, nickname }) => {
         return `
         <div class="player-card">
           <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
           <p>Position: ${position}</p>
-          <p>Number: ${number}</p>
+          <p>Jersey Number: ${Jersey_Number}</p>
           <p>Nickname: ${nickname !== null ? nickname : "N/A"}</p>
         </div>
       ` }
